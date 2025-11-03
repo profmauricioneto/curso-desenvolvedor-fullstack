@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu Portfólio Web</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="#home">Maurício Neto</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <button id="temaBtn" class="tema-toggle">Modo Escuro</button>
+            </nav>
+
+            <div class="header-content">
+                <h1>Olá, eu sou <span id="nome">Maurício Neto</span></h1>
+                <p>Desenvolvedor FullStack | Professor de Desenvolvimento de Software</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="sobre">
+                <h2>Sobre mim</h2>
+                <p>Descreva suas preferências e gostos.</p>
+                <button id="mostrarMaisBtn">Mostrar mais</button>
+                <p id="extra" class="oculto">
+                    Apresentar as informações das tecnologias que você domina.
+                </p>
+            </section>
+
+            <section id="projetos">
+                <h2>Meus Projetos</h2>
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <h3>Exemplo de Projeto 1</h3>
+                        <p class="projeto-descricao">Descreva seu projeto e seu objetivo.</p>
+                        <div class="projeto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="projeto-links">
+                            <button class="btn-secundario">Ver Demo</button>
+                            <button class="btn-secundario">Código</button>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h3>Exemplo de Projeto 2</h3>
+                        <p class="projeto-descricao">Descreva seu projeto e seu objetivo.</p>
+                        <div class="projeto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="projeto-links">
+                            <button class="btn-secundario">Ver Demo</button>
+                            <button class="btn-secundario">Código</button>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h3>Exemplo de Projeto 3</h3>
+                        <p class="projeto-descricao">Descreva seu projeto e seu objetivo.</p>
+                        <div class="projeto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="projeto-links">
+                            <button class="btn-secundario">Ver Demo</button>
+                            <button class="btn-secundario">Código</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adicionar-projeto">
+                    <h3>Adicionar Novo Projeto</h3>
+                    <input type="text" id="nomeProjeto" placeholder="Nome do projeto" />
+                    <input type="text" id="descricaoProjeto" placeholder="Descrição do projeto" />
+                    <button id="adicionarBtn">Adicionar Projeto</button>
+                </div>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Entre em contato comigo através das redes sociais ou e-mail.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 - Criado por Maurício Neto</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "curso-desenvolvedor-fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md,html}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profmauricioneto/curso-desenvolvedor-fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profmauricioneto/curso-desenvolvedor-fullstack/issues"
+  },
+  "homepage": "https://github.com/profmauricioneto/curso-desenvolvedor-fullstack#readme",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
