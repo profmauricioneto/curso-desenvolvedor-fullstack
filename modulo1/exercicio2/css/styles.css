@@ -1,0 +1,31 @@
+@import url('navbar.css');
+@import url('header.css');
+@import url('capacitacoes.css');
+
+/* Elementos globais! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: radial-gradient(circle at 0% 0%, #A139C4 0%, 10.2%, rgba(161, 57, 196, 0) 34%), radial-gradient(circle at 99.58333333333333% 100%, #EB5259 0%, 12.9%, rgba(235, 82, 89, 0) 43%), radial-gradient(circle at 14.583333333333334% 46.666666666666664%, #2B1136 0%, 60%, rgba(43, 17, 54, 0) 100%), radial-gradient(circle at 48.9013671875% 49.521484375%, #3C1055 0%, 100%, rgba(60, 16, 85, 0) 100%);
+    --primary-color: #A139C4;
+    --secondary-color: #EB5259;
+    --dark-purple: #2B1136;
+    --text-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+main {
+    padding: 80px;
+}
+
