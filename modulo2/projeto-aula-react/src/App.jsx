@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import GetData from './components/GetData';
+import React from "react";
+// import GetData from './components/GetData';
 // import FormLoginExample from './components/FormLoginExample';
-// import Cadastro from './exercicio-cadastro/Cadastro';
-// import Login from './exercicio-cadastro/Login';
-// import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import Cadastro from "./exercicio-cadastro/Cadastro";
+import Login from "./exercicio-cadastro/Login";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 // import Home from './pages/Home';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
@@ -13,33 +13,38 @@ import GetData from './components/GetData';
 // import UserList from './components/UserList';
 
 function App() {
+    // const [contador, setContador] = useState(0);
+    // const [name, setName] = useState("mauricio");
+    // const [tarefas, setTarefas] = useState([
+    //   { id: 1, title: 'limpar a casa' },
+    //   { id: 2, title: 'estudar' },
+    // ]);
 
-  // const [contador, setContador] = useState(0);
-  // const [name, setName] = useState("mauricio");
-  // const [tarefas, setTarefas] = useState([
-  //   { id: 1, title: 'limpar a casa' },
-  //   { id: 2, title: 'estudar' },
-  // ]);
+    // const users = [
+    //   { name: 'mauricio', age: 35 },
+    //   { name: 'fulano', age: 12 },
+    //   { name: 'cicrano', age: 65 },
+    //   { name: 'beltrano', age: 86 },
+    //   { name: 'dollynho', age: 15 }
+    // ]
 
-  // const users = [
-  //   { name: 'mauricio', age: 35 },
-  //   { name: 'fulano', age: 12 },
-  //   { name: 'cicrano', age: 65 },
-  //   { name: 'beltrano', age: 86 },
-  //   { name: 'dollynho', age: 15 }
-  // ]
-
-  return (
-    <>
-      <GetData />
-      {/* <BrowserRouter> */}
-      {/* <NavBar /> */}
-      {/* <button onClick={() => setContador(contador + 1)} className='border rounded-lg'>Clique</button>
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/cadastro" element={<Cadastro />} />
+                    <Route path="/login" element={<Login />} />
+                </Routes>
+            </BrowserRouter>
+            {/* <GetData /> */}
+            {/* <BrowserRouter> */}
+            {/* <NavBar /> */}
+            {/* <button onClick={() => setContador(contador + 1)} className='border rounded-lg'>Clique</button>
         <p>{contador}</p>
         <p>{tarefas.map((t, index) => (
           <Card key={index}>{t.id} - {t.title}</Card>
         ))}</p> */}
-      {/* <Routes>
+            {/* <Routes>
           <Route path='/cadastro' element={<Cadastro />} />
           <Route path='/login' element={<Login />} />
           <Route path='/' element={<Home />} />
@@ -47,9 +52,8 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter> */}
-      {/* <UserList users={users} /> */}
-
-      {/* <h1>Testando</h1>
+            {/* <UserList users={users} /> */}
+            {/* <h1>Testando</h1>
       <HelloWorld nome="Maurício Neto" idade={35} />
 
       <div style={{
@@ -96,11 +100,8 @@ function App() {
           <p>descricao</p>
         </Card>
       </div> */}
-    </ >
-
-
-
-  )
+        </>
+    );
 }
 
-export default App
+export default App;
