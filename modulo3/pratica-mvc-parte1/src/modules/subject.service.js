@@ -14,7 +14,7 @@ export const getSubjectById = (id) => {
 
 // Cria uma nova disciplina
 export const createSubject = (subjectData) => {
-    const newId = Math.max(...subjectsData.map((s) => s.id), 0) + 1;
+    const newId = subjectsData.length + 1;
     const newSubject = {
         id: newId,
         ...subjectData,

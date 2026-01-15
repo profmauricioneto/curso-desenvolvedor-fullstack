@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "oriented object programming",
-        "course": "computer sciece",
+        "course": "computer science",
         "workload": 80,
         "year": 2025,
         "graduation": true
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "data visualization",
-        "course": "computer sciece",
+        "course": "computer science",
         "workload": 40,
         "year": 2025,
         "graduation": true
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "name": "advanced data structure",
-        "course": "computer sciece",
+        "course": "computer science",
         "workload": 80,
         "year": 2025,
         "graduation": false

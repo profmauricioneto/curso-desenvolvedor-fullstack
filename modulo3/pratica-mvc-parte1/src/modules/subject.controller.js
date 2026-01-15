@@ -70,7 +70,7 @@ export const updateSubjectController = (req, res) => {
 export const deleteSubjectController = (req, res) => {
     try {
         const { id } = req.params;
-        const deletedSubject = subjectService.deletedSubject(id);
+        const deletedSubject = subjectService.deleteSubject(parseInt(id));
 
         if (!deletedSubject) {
             return res.status(404).json({ message: "Disciplina não encontrada" });
