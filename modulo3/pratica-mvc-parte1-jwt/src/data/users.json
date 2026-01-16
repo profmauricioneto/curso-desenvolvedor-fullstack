@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "username": "admin",
+        "password": "$2a$10$9KzXJhKqP8F5qK5Qh5Qh5uK5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Q",
+        "email": "admin@example.com",
+        "role": "admin"
+    },
+    {
+        "id": 2,
+        "username": "professor",
+        "password": "$2a$10$9KzXJhKqP8F5qK5Qh5Qh5uK5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Q",
+        "email": "professor@example.com",
+        "role": "professor"
+    },
+    {
+        "id": 3,
+        "username": "aluno",
+        "password": "$2a$10$9KzXJhKqP8F5qK5Qh5Qh5uK5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Qh5Q",
+        "email": "aluno@example.com",
+        "role": "student"
+    }
+]
