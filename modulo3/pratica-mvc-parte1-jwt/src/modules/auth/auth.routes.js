@@ -9,6 +9,6 @@ router.post("/login", authController.loginController);
 router.post("/register", authController.registerController);
 
 // Rotas protegidas
-router.get("/myprofile", authenticateToken, authController.getMeController);
+router.get("/myprofile", authenticateToken, authController.getMyProfileController);
 
 export default router;
