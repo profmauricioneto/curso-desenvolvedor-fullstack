@@ -1,18 +1,18 @@
-const prisma = require('../../config/prisma');
+const prisma = require("../../config/global.prisma");
 
 class StudentService {
     // Criar um novo aluno
     async createStudent(data) {
         const { name, email, cpf } = data;
-        
+
         const student = await prisma.student.create({
             data: {
                 name,
                 email,
-                cpf
-            }
+                cpf,
+            },
         });
-        
+
         return student;
     }
 
@@ -22,12 +22,12 @@ class StudentService {
             include: {
                 subjects: {
                     include: {
-                        subject: true
-                    }
-                }
-            }
+                        subject: true,
+                    },
+                },
+            },
         });
-        
+
         return students;
     }
 
@@ -38,37 +38,37 @@ class StudentService {
             include: {
                 subjects: {
                     include: {
-                        subject: true
-                    }
-                }
-            }
+                        subject: true,
+                    },
+                },
+            },
         });
-        
+
         return student;
     }
 
     // Atualizar aluno
     async updateStudent(id, data) {
         const { name, email, cpf } = data;
-        
+
         const student = await prisma.student.update({
             where: { id: parseInt(id) },
             data: {
                 name,
                 email,
-                cpf
-            }
+                cpf,
+            },
         });
-        
+
         return student;
     }
 
     // Deletar aluno
     async deleteStudent(id) {
         const student = await prisma.student.delete({
-            where: { id: parseInt(id) }
+            where: { id: parseInt(id) },
         });
-        
+
         return student;
     }
 
@@ -77,10 +77,10 @@ class StudentService {
         const enrollment = await prisma.studentSubject.create({
             data: {
                 studentId: parseInt(studentId),
-                subjectId: parseInt(subjectId)
-            }
+                subjectId: parseInt(subjectId),
+            },
         });
-        
+
         return enrollment;
     }
 
@@ -89,10 +89,10 @@ class StudentService {
         const enrollment = await prisma.studentSubject.deleteMany({
             where: {
                 studentId: parseInt(studentId),
-                subjectId: parseInt(subjectId)
-            }
+                subjectId: parseInt(subjectId),
+            },
         });
-        
+
         return enrollment;
     }
 }
